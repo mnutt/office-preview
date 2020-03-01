@@ -1,0 +1,13 @@
+{
+  "name": "office-preview",
+  "version": "1.0.0",
+  "description": "Preview office documents (.docx, .xslx, .pptx)",
+  "main": "index.js",
+  "repository": "https://github.com/mnutt/office-preview.git",
+  "author": "Michael Nutt <michael@nuttnet.net>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "duplexify": "^4.1.1"
+  }
+}

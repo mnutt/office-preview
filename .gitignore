@@ -1,0 +1,18 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/build
+
+# dependencies
+/node_modules/
+
+# misc
+/.env*
+/.pnp*
+/.sass-cache
+/coverage/
+npm-debug.log*
+yarn-error.log
+testem.log
