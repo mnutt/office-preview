@@ -185,7 +185,60 @@ const pkgdef :Spk.PackageDefinition = (
   # a directory here, its entire contents will be included recursively.
 
   bridgeConfig = (
-    apiPath = "/",
+    viewInfo = (
+      permissions = [
+        (
+          name = "user",
+          title = (defaultText = "user"),
+          description = (defaultText = "grants ability to use the previewer"),
+        )
+      ],
+
+      roles = [
+        (
+           title = (defaultText = "user"),
+           verbPhrase = (defaultText = "can use the previewer"),
+           permissions  = [true],
+        )
+      ],
+    ),
+    powerboxApis = [
+      (
+        name = "Document Preview",
+        displayInfo = (
+          title = ( defaultText = "Document Preview"),
+        ),
+        path = "/preview",
+        tag = (
+          canonicalUrl = "https://sandstorm.io/preview/doc"
+        ),
+        permissions  = [true],
+      ),
+      (
+        name = "Spreadsheet Preview",
+        displayInfo = (
+          title = ( defaultText = "Spreadsheet Preview"),
+        ),
+        path = "/preview",
+        tag = (
+          canonicalUrl = "https://sandstorm.io/preview/xls"
+        ),
+        permissions  = [true],
+      ),
+      (
+        name = "Presentation Preview",
+        displayInfo = (
+          title = ( defaultText = "Presentation Preview"),
+        ),
+        path = "/preview",
+        tag = (
+          canonicalUrl = "https://sandstorm.io/preview/ppt"
+        ),
+        permissions  = [true],
+      ),
+    ],
+
+    saveIdentityCaps = true,
   )
   #bridgeConfig = (
   #  # Used for integrating permissions and roles into the Sandstorm shell
